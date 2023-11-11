@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![loiphamvan](https://circleci.com/gh/loiphamvan1799/project4-MicroserviceApp.svg?style=svg)](https://app.circleci.com/pipelines/github/loiphamvan1799/project4-MicroserviceApp))
 
 ## Project Overview
 
@@ -22,8 +22,10 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 **The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
 ---
+==================================
+## START PROJECT
 
-## Setup the Environment
+### STEP 1: Setup the Environment
 
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
 ```bash
@@ -36,15 +38,26 @@ source .devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
-### Running `app.py`
+### STEP 2: Install dependencies
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+- Set up the environment by running `make setup`. This will create a virtual environment in your home directory called `.devops`
+- Install dependencies by running `make install`
+- Lint application (requires hadolint)
 
-### Kubernetes Steps
+### STEP3: Run Docker
+
+- Run the docker: `./run_docker.sh`
+
+### STEP 4: Upload to Docker Hub
+
+- In the `./upload_docker.sh` file, edit the dockerpath and the docker username to a personalized
+- To upload to docker hub, run `./upload_docker.sh`
+
+### Step 5: Kubernetes deployment
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+- To deploy to kubernetes, run `./run_kubernetes.sh`
