@@ -1,4 +1,4 @@
-[![loiphamvan](https://circleci.com/gh/loiphamvan1799/project4-MicroserviceApp.svg?style=svg)](https://app.circleci.com/pipelines/github/loiphamvan1799/project4-MicroserviceApp))
+[![loiphamvan](https://circleci.com/gh/loiphamvan1799/project4-MicroserviceApp.svg?style=svg)](https://app.circleci.com/pipelines/github/loiphamvan1799/project4-MicroserviceApp)
 
 ## Project Overview
 
